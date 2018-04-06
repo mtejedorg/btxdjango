@@ -1,0 +1,9 @@
+{% extends "WebAPI/base.html" %}
+
+{% block section %}
+    <ul>
+        {% for product in product_list %}
+        <li>{{ product.name }}, {{ product.price }}, {{ product.custom_label_0 }},{{ product.discount }}, {{ product.type }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

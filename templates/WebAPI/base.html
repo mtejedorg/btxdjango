@@ -1,0 +1,20 @@
+<html lang="es">
+	<head>
+         <title>BotXo</title>
+	</head>
+	<body>
+			<header>
+				<h1><a href="{% url 'WebAPI:index' %}">Coolshop</a></h1>
+					<ul id="menu">
+						<li><a href="{% url 'WebAPI:ordered' 'price' %}"> Price </a></li>
+						<li><a href="{% url 'WebAPI:ordered' 'discount' %}"> Discount </a></li>
+						<li><a href="{% url 'WebAPI:ordered' 'discounted' %}"> Discounted </a></li>
+						<li><a href="{% url 'WebAPI:type' 'Comedy' %}"> Comedy </a></li>
+					</ul>
+			</header>
+			<section>
+				{% block section %}
+                {% endblock %}
+			</section>
+	</body>
+</html>
